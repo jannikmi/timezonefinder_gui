@@ -20,6 +20,17 @@ This project is licensed under the [MIT License](LICENSE), same as the underlyin
 - add documentation: comprehensive README with setup instructions, Configuration documentation
 - Remove any TODOs, debug comments, or temporary code
 - code review for security and best practices
-- CI/CD for deployment
+- CI/CD for deployment, linting, and testing. GitHub Actions
 - consider hosting the project on github.io like https://ringsaturn.github.io/tzf-web/
 - adding visualisation for the hexagon spatial index used in the background
+- add pre-commit hooks for code quality checks (e.g., black, flake8, isort)
+- Add automated tests for API endpoints and core logic
+- Set up basic error handling and user-friendly error pages
+- Improve input validation and sanitization for API requests, use pydantic
+  - consider using fastAPI?!
+- Add logging for key actions and errors
+- Document API endpoints and usage examples
+- Provide Dockerfile or deployment instructions for easy setup
+- Add a CONTRIBUTING.md for community contributions
+- Ensure static files are served securely in production
+- serve the statistic as static file. write once instead of generating on each request
