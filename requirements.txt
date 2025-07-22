@@ -1,0 +1,3 @@
+# python>=3.6
+django>=3.0.6
+timezonefinder[numba]>=7.0.0

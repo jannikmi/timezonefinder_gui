@@ -1,0 +1,36 @@
+timezonefinder(L) API Documentation
+
+
+NOTE: timezonefinder is an open source python package and has many additional features.
+Please consider installing it locally in order to keep the load of this online API low.
+Check out the official documentation: https://timezonefinder.readthedocs.io/en/latest/
+Github: https://github.com/jannikmi/timezonefinder
+
+
+API urls must follow this format:
+
+f"http://timezonefinder.michelfe.it/api/{mode}_{longitude}_{latitude}"
+
+use {mode} to select the function to query:
+0: TimezoneFinder.timezone_at()
+1: TimezoneFinder.certain_timezone_at()
+2: TimezoneFinder.closest_timezone_at()
+3: TimezoneFinderL.timezone_at()
+4: TimezoneFinderL.timezone_at_land()
+5: TimezoneFinder.timezone_at_land()
+
+Example:
+http://timezonefinder.michelfe.it/api/0_42.879638671875_11.888853082975968
+
+Result (JSON):
+{"tz_name": "Africa/Djibouti", "status_code": 200}
+
+
+Possible status code (cf. HTTP status codes):
+    200  # OK
+    204  # No Content (tz = None)
+    422  # Unprocessable Entity (error appeared during query: e.g. lat lng out of bounds)
+    400  # Bad request (wrong url format)
+
+
+
