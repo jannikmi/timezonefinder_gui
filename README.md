@@ -10,7 +10,8 @@ This project is licensed under the [MIT License](LICENSE), same as the underlyin
 
 ## TODOs
 
-- load secrets and configs from pydantic settings file, add template, but keep actual values secret: <https://docs.pydantic.dev/1.10/usage/settings/>
+- load secrets and configs from 2 separate pydantic settings file. one private and one public. for the private one, add a corresponding template, but keep actual values secret: 
+  - <https://docs.pydantic.dev/1.10/usage/settings/>
   - ALLOWED_HOSTS
   - SECRET_KEY
   - take care of the Mapbox default access token <https://docs.mapbox.com/help/troubleshooting/how-to-use-mapbox-securely/#access-tokens>
