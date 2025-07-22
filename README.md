@@ -20,4 +20,6 @@ This project is licensed under the [MIT License](LICENSE), same as the underlyin
 - add documentation: comprehensive README with setup instructions, Configuration documentation
 - Remove any TODOs, debug comments, or temporary code
 - code review for security and best practices
-- CI/CD for deployment to `timezonefinder.michelfe.it/gui`
+- CI/CD for deployment
+- consider hosting the project on github.io like https://ringsaturn.github.io/tzf-web/
+- adding visualisation for the hexagon spatial index used in the background
