@@ -10,6 +10,7 @@ This project is licensed under the [MIT License](LICENSE), same as the underlyin
 
 ## TODOs
 
+- update GUI to Python 3.13 and timezonefinder 7
 - load secrets and configs from 2 separate pydantic settings file. one private and one public. for the private one, add a corresponding template, but keep actual values secret: 
   - <https://docs.pydantic.dev/1.10/usage/settings/>
   - ALLOWED_HOSTS

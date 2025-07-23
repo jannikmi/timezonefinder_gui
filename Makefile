@@ -1,7 +1,7 @@
-
+# required to move to the repositoty:
+# cd Django/timezonefinderAPI
 
 update:
-	cd Django/timezonefinderAPI
 	pip install pip -U
 	pip install timezonefinder[numba] --upgrade
 
@@ -10,3 +10,5 @@ status:
 
 restart:
 	supervisorctl restart uwsgi
+
+upgrade: update restart
